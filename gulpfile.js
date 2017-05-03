@@ -28,19 +28,19 @@ gulp.task('sass', function() {
 		.src(src.scss)
 		.pipe(sourcemaps.init())
 		.pipe(sass({
-			// outputStyle: 'nested',
+			outputStyle: 'compressed',
 			includePaths: [
 				'node_modules/susy/sass',
-        'node_modules/font-awesome/scss',
+				'node_modules/font-awesome/scss',
 				require('node-normalize-scss').includePaths
 			]
 		}).on('error', sass.logError))
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions', 'ie >= 9']
 		}))
-    .pipe(uncss({
-      html: [src.html]
-    }))
+		.pipe(uncss({
+			html: [src.html]
+		}))
 		.pipe(gulp.dest(src.css))
 		.pipe(reload({
 			stream: true

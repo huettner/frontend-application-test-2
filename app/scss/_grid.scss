@@ -1,0 +1,15 @@
+/**
+ * Susy import
+ */
+@import "susy";
+
+$susy: (
+  container: 1140px,
+  columns: 12,
+  gutter: .25,
+  global-box-sizing: border-box,
+  output: isolate,
+  // debug: (image: show)
+);
+
+@include border-box-sizing;

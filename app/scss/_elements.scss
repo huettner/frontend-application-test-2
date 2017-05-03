@@ -1,0 +1,33 @@
+/**
+ * Elements
+ */
+body {
+    margin: 0;
+    font-family: Raleway, Arial;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #333;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0;
+    font-weight: 700;
+    line-height: 20px;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    text-align: center;
+    border: 0 !important;
+}

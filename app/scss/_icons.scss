@@ -1,0 +1,68 @@
+/**
+ * Icons
+ */
+.icon {
+    padding-right: 0.5em;
+}
+
+.icon-home {
+    @extend .fa;
+    @extend .fa-home;
+}
+
+.icon-camera {
+    @extend .fa;
+    @extend .fa-camera;
+}
+
+.icon-refs {
+    @extend .fa;
+    @extend .fa-code;
+}
+
+.icon-about {
+    @extend .fa;
+    @extend .fa-info-circle;
+}
+
+.icon-contact {
+    @extend .fa;
+    @extend .fa-address-card;
+}
+
+.icon-xing {
+    @extend .fa;
+    @extend .fa-xing;
+}
+
+.icon-facebook,
+.icon-google,
+.icon-twitter {
+    font-size: 35px;
+    line-height: 70px;
+    color: $color-bright;
+    padding-right: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    position: relative;
+    margin: 0 10px;
+}
+
+.icon-facebook {
+    @extend .fa;
+    @extend .fa-facebook;
+    background-color: rgba(58, 88, 158, 1);
+}
+
+.icon-twitter {
+    @extend .fa;
+    @extend .fa-twitter;
+    background-color: rgba(94, 169, 221, 1);
+}
+
+.icon-google {
+    @extend .fa;
+    @extend .fa-google-plus;
+    background-color: rgba(191, 51, 34, 1);
+}
