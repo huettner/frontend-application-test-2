@@ -47,22 +47,32 @@
     border-radius: 35px;
     position: relative;
     margin: 0 10px;
+    transition: all 0.5s ease 0s;
 }
 
 .icon-facebook {
     @extend .fa;
     @extend .fa-facebook;
     background-color: rgba(58, 88, 158, 1);
+    &:hover {
+      background-color: darken(rgba(58, 88, 158, 1), 10%);
+    }
 }
 
 .icon-twitter {
     @extend .fa;
     @extend .fa-twitter;
     background-color: rgba(94, 169, 221, 1);
+    &:hover {
+      background-color: darken(rgba(94, 169, 221, 1), 10%);
+    }
 }
 
 .icon-google {
     @extend .fa;
     @extend .fa-google-plus;
     background-color: rgba(191, 51, 34, 1);
+    &:hover {
+      background-color: darken(rgba(191, 51, 34, 1), 10%);
+    }
 }
