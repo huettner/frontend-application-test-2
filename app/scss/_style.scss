@@ -21,17 +21,13 @@
 
 /* Navigation */
 .navbar {
-  position: fixed;
-  height: 54px;
-  top: 0;
-  left: 0;
   width: 100%;
   background: $color-dark;
 }
 
 .navbar-nav {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   text-transform: uppercase;
   padding: 0;
@@ -57,6 +53,17 @@
     }
   }
 }
+@include susy-breakpoint($breakpoint-medium) {
+  .navbar {
+    position: fixed;
+    height: 54px;
+    top: 0;
+    left: 0;
+  }
+  .navbar-nav {
+      flex-wrap: nowrap;
+  }
+}
 
 /* Main title */
 
@@ -72,6 +79,7 @@
     font-size: 35px;
     line-height: 50px;
     font-weight: 400;
+    margin-top: 0;
   }
   .slogon {
     font-size: 19px;
