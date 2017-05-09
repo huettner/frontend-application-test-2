@@ -23,6 +23,7 @@
 .navbar {
   width: 100%;
   background: $color-dark;
+  z-index: 10;
 }
 
 .navbar-nav {
@@ -74,6 +75,9 @@
   background: $color-dark;
   height: 100vh;
   padding: 0 10px;
+  a {
+    cursor: default;
+  }
   .site-name {
     padding-top: 20vh;
     font-size: 35px;
@@ -145,8 +149,12 @@
   padding: 30px 0;
 }
 
+
+
+
 .part {
   @include span(12);
+  transition: all 2.15s;
   >h3 {
     font-size: 110%;
     font-weight: 800;
@@ -157,11 +165,25 @@
     text-align: center;
     margin: 0 auto 1em auto
   }
-  @include susy-breakpoint($breakpoint-medium) {
-    @include gallery(6 of 12);
+  >img {
+    max-width: 100%;
   }
-  @include susy-breakpoint($breakpoint-large) {
-    @include gallery(3 of 12);
+}
+
+.part {
+  animation: fading 9s infinite;
+}
+@keyframes fading {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
   }
 }
 
