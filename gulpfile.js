@@ -9,7 +9,8 @@ var uncss = require('gulp-uncss');
 var src = {
 	scss: 'app/scss/*.scss',
 	css: 'app/css',
-	html: 'app/*.html'
+	html: 'app/*.html',
+  js: 'app/js/*.js'
 };
 
 // Static Server + watching scss/html files
@@ -19,6 +20,7 @@ gulp.task('serve', ['sass'], function() {
 	});
 
 	gulp.watch(src.scss, ['sass']);
+  gulp.watch(src.js).on('change', reload);
 	gulp.watch(src.html).on('change', reload);
 });
 

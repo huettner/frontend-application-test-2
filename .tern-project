@@ -1,0 +1,13 @@
+{
+  "ecmaVersion": 5,
+  "libs": [],
+  "loadEagerly": [
+    "app/js/*.js"
+  ],
+  "dontLoad": [
+    "node_modules/**"
+  ],
+  "plugins": {
+    "doc_comment": true
+  }
+}
